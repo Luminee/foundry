@@ -1,0 +1,34 @@
+{
+    "name": "luminee/foundry",
+    "description": "Foundation for Luminee packages(in laravel)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Luminee\\Foundry\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luminee\\Foundry\\FoundryServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "LuminEe",
+            "email": "1123462990@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "5.5.*"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
