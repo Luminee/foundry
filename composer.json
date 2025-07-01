@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "Luminee\\Foundry\\": "src/"
-        }
+        },
+        "files": [
+            "src/Supports/functions.php"
+        ]
     },
     "extra": {
         "laravel": {
