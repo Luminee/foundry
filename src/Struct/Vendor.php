@@ -34,6 +34,11 @@ class Vendor
      */
     public $json_file;
 
+    /**
+     * @var array
+     */
+    public $console;
+
     public function __construct($dir)
     {
         $this->json_file = realpath($dir . '/composer.json');
@@ -60,6 +65,7 @@ class Vendor
             'name' => $this->name,
             'config_name' => $this->config_name,
             'config' => $this->config,
+            'console' => $this->console,
             'base_path' => $this->base_path,
             'composer' => $this->composer,
             'json_file' => $this->json_file,
