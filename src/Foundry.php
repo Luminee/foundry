@@ -7,6 +7,8 @@ use Luminee\Foundry\Struct\Vendor;
 
 class Foundry
 {
+    const VENDOR_NAME = 'luminee/foundry';
+
     /**
      * @var Application
      */
