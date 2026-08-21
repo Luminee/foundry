@@ -25,7 +25,7 @@ class Vendor
     public $base_path;
 
     /**
-     * @var stdClass
+     * @var \stdClass
      */
     public $composer;
 

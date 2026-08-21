@@ -21,6 +21,19 @@ if (!function_exists('foundry')) {
     }
 }
 
+if (!function_exists('vendor')) {
+    /**
+     * 获取已注册的 Vendor 实例（foundry 的别名）
+     *
+     * @param string $name vendor 名称，如 'luminee/belobog'
+     * @return \Luminee\Foundry\Struct\Vendor|null
+     */
+    function vendor(string $name)
+    {
+        return foundry($name);
+    }
+}
+
 if (!function_exists('vendor_path')) {
     /**
      * 获取指定包的路径
@@ -74,7 +87,7 @@ if (!function_exists('package_resource_path')) {
         $foundryVendor = foundry($vendor);
         
         if (!$foundryVendor) {
-            throw new InvalidArgumentException("Vendor [{$vendor}] not found.");
+            throw new \InvalidArgumentException("Vendor [{$vendor}] not found.");
         }
         
         $basePath = dirname($foundryVendor->json_file);

@@ -18,12 +18,12 @@ trait Directory
     }
 
     /**
-     * Get stulied directory.
+     * Get studlied directory.
      *
      * @param $directory
      * @return array
      */
-    protected function stulyDirectory($directory)
+    protected function studlyDirectory($directory)
     {
         return array_map(function ($item) {
             return Str::studly($item);
