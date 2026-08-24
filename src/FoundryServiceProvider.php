@@ -3,6 +3,7 @@
 namespace Luminee\Foundry;
 
 use Luminee\Foundry\Abstracts\ServiceProvider;
+use Luminee\Foundry\Console\Commands\FoundryMigrateCommand;
 
 class FoundryServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,8 @@ class FoundryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->commands([
+            FoundryMigrateCommand::class,
+        ]);
     }
 }
